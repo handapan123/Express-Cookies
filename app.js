@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import router from "./routes/authRoutes.js";
 import cookieParser from "cookie-parser";
+import requrieAuth from "./middleware/authMiddleware.js";
 
 const app = express();
 
@@ -26,5 +27,5 @@ mongoose
 
 // routes
 app.get("/", (req, res) => res.render("home"));
-app.get("/smoothies", (req, res) => res.render("smoothies"));
+app.get("/smoothies", requrieAuth, (req, res) => res.render("smoothies"));
 app.use(router);
