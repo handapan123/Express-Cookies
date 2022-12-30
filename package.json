@@ -2,11 +2,10 @@
   "name": "express-cookies",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +26,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.23",
     "nodemon": "^2.0.20",
+    "timeseries-analysis": "^1.0.12",
     "validator": "^13.7.0"
   }
 }
