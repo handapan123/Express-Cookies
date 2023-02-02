@@ -28,8 +28,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/home", (req, res) => {
-  console.log(req.cookies);
-  res.json(req.cookies);
+  res.send("Hello World")
 });
 
 var coeffs = t.ARMaxEntropy();
